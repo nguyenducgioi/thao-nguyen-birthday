@@ -136,14 +136,14 @@ function showMessage() {
     text: `Gửi đến em tuổi 17 đầy thơ mộng, hãy sống hết mình với đam mê tuổi trẻ, không còn nhút nhát, biết yêu thương bản thân và quý trọng gia đình. Mong em luôn vui vẻ, hạnh phúc và xinh đẹp. Chúc em luôn như ý, sống một đời an nhiên.
     Happy birthday to you!!!🎂🎂💟💟`,
     button: {
-      text: "❤️️",
+      text: "💞",
     },
   });
 }
 
 let lyrics = [
   {
-    text: "Háp pi bớt đây tú Thảo Nguyên 💖💖💖",
+    text: "Háp pi bớt đây tu Thảo Nguyên 💖💖💖",
     startAt: 0,
   },
   {
@@ -427,7 +427,7 @@ let lyrics = [
     startAt: 202.8,
   },
   {
-    text: "Háp pi bớt đây tú Thảo Nguyên 💖💖💖",
+    text: "Háp pi bớt đây tu Thảo Nguyên 💖💖💖",
     startAt: 204.2,
   },
 ];
