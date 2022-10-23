@@ -143,7 +143,7 @@ function showMessage() {
 
 let lyrics = [
   {
-    text: "Háp pi bớt đây tú Nguyên 💖💖💖",
+    text: "Háp pi bớt đây tú Thảo Nguyên 💖💖💖",
     startAt: 0,
   },
   {
@@ -427,7 +427,7 @@ let lyrics = [
     startAt: 202.8,
   },
   {
-    text: "Háp pi bớt đây tú Nguyên 💖💖💖",
+    text: "Háp pi bớt đây tú Thảo Nguyên 💖💖💖",
     startAt: 204.2,
   },
 ];
