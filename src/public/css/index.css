@@ -1,0 +1,182 @@
+body {
+  overflow: hidden;
+  margin: 0;
+  background-color: bisque;
+  cursor: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/9632/heart.svg"),
+    auto;
+}
+
+.mute-icon {
+  position: fixed;
+  top: 12px;
+  left: 12px;
+  font-size: 30px;
+  color: tomato;
+  cursor: pointer;
+}
+
+.mute-icon i {
+  display: none;
+}
+
+.mute-icon i.active {
+  display: block;
+}
+
+h1 {
+  position: fixed;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  transform: translateY(-200%);
+  font-family: "Love Ya Like A Sister", Cursive;
+  font-size: 40px;
+  color: #c70012;
+  padding: 0 20px;
+}
+
+h1 span {
+  display: inline-block;
+}
+
+h1 span span {
+  display: inline-block;
+  width: auto;
+  margin-right: -0.3em;
+  animation: animate-characters 0.75s var(--index) forwards infinite;
+  animation-duration: 3s;
+  opacity: 0;
+  position: relative;
+}
+
+.avatar {
+  position: fixed;
+  left: calc(50%);
+  top: 55%;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 5px solid rgba(234, 15, 150, 0.9);
+  box-shadow: 0 0 10px rgba(15, 219, 234, 0.9);
+  -webkit-animation: balloon1 6s ease-in-out infinite;
+  -moz-animation: balloon1 6s ease-in-out infinite;
+  -o-animation: balloon1 6s ease-in-out infinite;
+  animation: balloon1 6s ease-in-out infinite;
+}
+
+.user-name {
+  position: fixed;
+  left: calc(50%);
+  bottom: 5%;
+  font-size: 36px;
+  font-weight: 800;
+  color: rgb(213, 89, 162);
+  transform-origin: 0 0;
+  font-family: "Love Ya Like A Sister", Cursive;
+  text-shadow: 0 0 20px rgb(213, 89, 162);
+  -webkit-animation: balloon1 4s ease-in-out infinite;
+  -moz-animation: balloon1 4s ease-in-out infinite;
+  -o-animation: balloon1 4s ease-in-out infinite;
+  animation: balloon1 4s ease-in-out infinite;
+}
+
+.swal-text {
+  text-align: justify;
+  line-height: 24px;
+  font-size: 16px;
+}
+
+.lyrics-area {
+  position: fixed;
+  bottom: 12px;
+  left: 12px;
+}
+
+.lyrics-area {
+  color: #c70012;
+  font-weight: 500;
+  font-family: "Love Ya Like A Sister", Cursive;
+}
+
+@keyframes animate-characters {
+  0% {
+    bottom: -0.7em;
+    opacity: 1;
+    color: azure;
+  }
+
+  50% {
+    bottom: 0.7em;
+    color: tomato;
+  }
+
+  100% {
+    bottom: 0;
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes balloon1 {
+  0%,
+  100% {
+    -webkit-transform: translate(-50%, 0) rotate(-6deg);
+  }
+  50% {
+    -webkit-transform: translate(-50%, -20px) rotate(8deg);
+  }
+}
+@-moz-keyframes balloon1 {
+  0%,
+  100% {
+    -moz-transform: translate(-50%, 0) rotate(-6deg);
+  }
+  50% {
+    -moz-transform: translate(-50%, -20px) rotate(8deg);
+  }
+}
+@-o-keyframes balloon1 {
+  0%,
+  100% {
+    -o-transform: translate(-50%, 0) rotate(-6deg);
+  }
+  50% {
+    -o-transform: translate(-50%, -20px) rotate(8deg);
+  }
+}
+@keyframes balloon1 {
+  0%,
+  100% {
+    transform: translate(-50%, 0) rotate(-6deg);
+  }
+  50% {
+    transform: translate(-50%, -20px) rotate(8deg);
+  }
+}
+
+@media (min-width: 1200px) {
+  h1 {
+    font-size: 60px;
+  }
+}
+
+@media (max-width: 540px) {
+  h1 {
+    line-height: 44px;
+    font-family: "Time New Roman", "Courier New", Courier, monospace;
+  }
+
+  .avatar {
+    width: 100px;
+    height: 100px;
+  }
+
+  .user-name {
+    font-size: 24px;
+    font-family: "Time New Roman", "Courier New", Courier, monospace;
+  }
+
+  .lyrics-area {
+    display: none;
+  }
+}
