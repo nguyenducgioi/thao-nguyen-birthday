@@ -162,9 +162,9 @@ h1 span span {
 
 @media (max-width: 540px) {
   h1 {
-    top: 35%;
+    top: 40%;
     line-height: 48px;
-    font-family: "Time New Roman", "Courier New", Courier, monospace;
+    font-family: "Time New Roman", "Courier New", Courier, cursive;
   }
 
   .avatar {
